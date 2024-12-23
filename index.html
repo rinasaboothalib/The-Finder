@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The finder world</title>
+  <style>
+    /* General Reset */
+    body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background-color: #11ef18;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .main-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .forum-section .topic {
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .forum-section .topic h3 {
+      font-size: 18px;
+    }
+
+    .forum-section .topic h3 a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .forum-section .topic h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .post-topic {
+      margin-top: 40px;
+    }
+
+    .new-topic-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .new-topic-form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .new-topic-form input,
+    .new-topic-form textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .new-topic-form button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .new-topic-form button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>THE FINDER WORLD</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="category.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="forum-section">
+      <h2>Recent Topics</h2>
+      <div class="topic">
+        <h3><a href="#">How to learn web development?</a></h3>
+        <p>Started by <strong>JohnDoe</strong> | 5 replies | Last reply: 1 hour ago</p>
+      </div>
+      <div class="topic">
+        <h3><a href="#">Best programming languages for beginners?</a></h3>
+        <p>Started by <strong>JaneSmith</strong> | 10 replies | Last reply: 2 hours ago</p>
+      </div>
+      <div class="topic">
+        <h3><a href="#">Tips for mastering CSS?</a></h3>
+        <p>Started by <strong>CodeMaster</strong> | 3 replies | Last reply: 30 minutes ago</p>
+      </div>
+    </section>
+
+    <section class="post-topic">
+      <h2>Start a New Topic</h2>
+      <form action="#" method="POST" class="new-topic-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Post Topic</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Online Forum. All rights reserved.</p>
+  </footer>
+</body>
+</html>

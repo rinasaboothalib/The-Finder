@@ -1,0 +1,58 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #11ea09;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Section Styles */
+section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+section h2 {
+    color: #0078D7;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
